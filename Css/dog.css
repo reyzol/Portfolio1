@@ -1,0 +1,261 @@
+body {
+    background: url("https://img.freepik.com/free-vector/frame-with-dogs-vector-white-background_53876-127700.jpg?w=2000");
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+.Dalmatin {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.DalmatinImg {
+    border-radius: 15px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.Dalmatin > h3 {
+    position: absolute;
+    right: 150px;
+    font-size: 30px;
+}
+.Dalmatin > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+
+.Apcharka {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+.ApcharkaImg {
+    border-radius: 15px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.Apcharka > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+.Doberman {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+.DoberManImg {
+    border-radius: 15px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.Doberman > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+
+.Buldok {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.BuldokImg {
+    border-radius: 15px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.Buldok > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+
+.Chiuahua {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.ChiuahuaImg {
+    border-radius: 15px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.Chiuahua > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+
+
+.Shpic {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.ShpicImg {
+    margin: 10px;
+    border-radius: 15px;
+    width: 377px;
+}
+
+.Shpic > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+.Layka {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+.LaykaImg {
+    margin: 10px;
+    border-radius: 15px;
+    width: 377px;
+}
+.Layka > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+.Friz {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+.FrizImg {
+    border-radius: 15px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.Friz > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+/* Adjust the width and styling of your slides as needed */
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons for navigation */
+.prev-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 130px;
+}
+.next-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 130px;
+    right: 0;
+
+}
+
+.next-button:hover {
+    opacity: 0.9;
+}
+.prev-button:hover {
+    opacity: 0.9;
+}

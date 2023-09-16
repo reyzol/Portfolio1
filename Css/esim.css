@@ -1,0 +1,294 @@
+/*------------------ Fonts ------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+/*------------------ Variables ------------------*/
+
+:root{
+    --main-background: rgb(238, 255, 255);
+    --main-text-color: rgb(0, 27, 27);
+    --dark-cyan: rgb(0, 133, 133);
+}
+
+
+/*------------------ Global Stuff ------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    color: var(--main-text-color);
+}
+html,body {
+  overflow-x: hidden;
+}
+body{
+    background: white;
+}
+
+/* Header styles */
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header > h1 {
+  color: white;
+}
+/* Navigation styles */
+.nav {
+  background-color: seagreen;
+  padding: 40px;
+  text-align: center;
+}
+nav > p {
+  color: white;
+}
+nav > h1 {
+  color: white;
+}
+.nav img {
+  max-width: 100%;
+  margin-bottom: 20px; /* Add some spacing between the image and text */
+}
+
+/* Adjust text styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .nav h1 {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+  
+  .nav p {
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
+}
+
+/*------------------ Custom Scrollbar ------------------*/
+
+
+::-webkit-scrollbar-track{
+    background-color: var(--main-background);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-cyan);
+}
+
+
+
+h1{
+    background-color: inherit;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 600px) {
+  .home-popular > .further-description {
+    margin-left: 80px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .description {
+    margin-left: 5px;
+  }
+  .slider > ul > li > .small1 {
+    left: 25px;
+    height: 70px;
+  }
+  .slider > ul > li > .small2 {
+    left: 225px;
+    height: 70px;
+  }
+  .slider > ul > li > .big1 {
+    left: 75px;
+    height: 110px;
+  }
+  .slider > ul > li > .big2 {
+    left: 170px;
+    height: 110px;
+  }
+  .slider > ul > li > .focus {
+    left: 120px;
+    height: 140px;
+  }
+  .slider > .slider-prev {
+    top: 80px;
+    left: 0px;
+  }
+  .slider > .slider-next {
+    top: 75px;
+    left: 290px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.home-popular{
+    padding: 25vh 8vw 15vh 3vw;
+    width: 63%;
+}
+
+.home-popular h3{
+    text-transform: capitalize;
+    margin: auto;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.home-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-right: 20px;
+}
+
+
+.home-header h1{
+    font-size: 5.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.slider{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 700px;
+  position: relative;
+}
+
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+li img{
+  border-radius: 5% / 3%;
+  border: 1px solid var(--main-background);
+  position: relative;
+}
+
+.slider-prev,
+.slider-next{
+  background-color: inherit;
+  font-size: 50px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 600;
+  position: absolute;
+  top: 160px;
+}
+
+.slider-prev{
+  left: 40px;
+}
+
+.slider-next{
+  left: 720px;
+}
+
+.slider-prev::before{
+  content: '<';
+  margin-right: 15px;
+}
+
+.slider-next::before{
+  content: '>';
+  margin-left: 15px;
+}
+
+.description{
+  position: relative;
+  top: 320px;
+  left: 80px;
+}
+
+.description h3{
+  display: none;
+}
+
+.further-description{
+  position: relative;
+  top: 310px;
+}
+
+.further-description h2{
+  text-transform: capitalize;
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 55%;
+}
+
+h2.active{
+  display: inline;
+}
+
+h3.active{
+  display: block !important;
+}
+
+.item{
+  flex: 1 0 20%;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  border: none;
+}
+
+.small1, .small2 {
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 70px;
+}
+
+.big1, .big2 {
+  height: 250px;
+  position: absolute;
+  z-index: 0;
+  top: 40px;
+}
+
+.small1{
+  left: 90px;
+}
+
+.big1{
+  left: 170px;
+}
+
+.focus {
+  position: absolute;
+  z-index: 1;
+  height: 300px;
+  left: 270px;
+  top: 10px;
+}
+
+.big2{
+  left: 400px;
+}
+
+.small2{
+  left: 520px;
+}
+@media screen and (max-width: 1200px){
+  .home-header {
+    display: none;
+  }
+}
